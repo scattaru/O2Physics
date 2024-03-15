@@ -181,7 +181,7 @@ struct HfCorrelatorDsHadrons {
                         kAssocTrackStepFake,
                         kAssocTrackNSteps };
 
-  using SelCollisionsWithDs = soa::Filtered<soa::Join<aod::Collisions, aod::Mults, aod::EvSels, aod::DmesonSelection>>; // collisionFilter applied
+  using SelCollisionsWithDs = soa::Filtered<soa::Join<aod::Collisions, aod::Mults, aod::EvSels, aod::DmesonSelection>>;              // collisionFilter applied
   using SelCollisionsWithDsMc = soa::Filtered<soa::Join<aod::McCollisions, aod::DmesonSelection>>;                                   // collisionFilter applied
   using CandDsData = soa::Filtered<soa::Join<aod::HfCand3Prong, aod::HfSelDsToKKPi>>;                                                // flagDsFilter applied
   using CandDsMcReco = soa::Filtered<soa::Join<aod::HfCand3Prong, aod::HfSelDsToKKPi, aod::HfCand3ProngMcRec>>;                      // flagDsFilter applied
